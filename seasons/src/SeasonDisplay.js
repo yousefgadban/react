@@ -1,8 +1,13 @@
 import React from 'react';
+import Spinner from './Spinner';
 
-const SeasonDisplay = () => {
+const SeasonDisplay = (props) => {
     return (
-        <div>Season Display</div>
+        <div>
+            <i className="sun icon" />
+            Season Display {props.lat}
+            <Spinner message = 'Spinner...' />
+        </div>
     );
 }
 
