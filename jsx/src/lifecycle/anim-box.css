@@ -1,0 +1,20 @@
+.box {
+    position: absolute;
+    left: -100%;
+    top: 0
+    
+}
+
+.slidebox {
+    animation: slidebox 2s linear forwards;
+}
+
+
+
+
+@keyframes slidebox {
+    to {
+        left: 0px;
+      
+    }
+}
