@@ -13,7 +13,6 @@ import AnimBox from './lifecycle/AnimBox';
 import Circle from './lifecycle/circle'
 import Spinner from './Spinner/Spinner'
 import ShowSpinner from './lifecycle/ShowSpinner';
-import Chuck from './chuck/Chuck';
 import Parent from './11-parentToChild/Parent';
 import Forms from './11-parentToChild/forms';
 import FormSubmit from './11-parentToChild/FormSubmit';
@@ -23,15 +22,21 @@ import Landing from './landing/Landing';
 import { ReadMore } from './readMore/ReadMore';
 import { Todo } from './readMore/Todo';
 import { CheckBoxx } from './readMore/checkboxx';
+import { Simple } from './19-functions/simple-fetch';
+import { Algolia } from './19-functions/algolia';
+import Chuck from './19-functions/chuck/Chuck';
 
 function App() {
   return (
       
     <div>
-       <CheckBoxx />
+      <Chuck />
     </div>
 
 /*
+<Algolia />
+<Simple />
+<CheckBoxx />
 <ReadMore text='lorems  dsaf dsafdasf  dsfadsf dsadsaf  dsafdas  dsafasdf' len={10} />
 <ReadMore text='lorems  dsaf dsafdasf  dsfadsf dsadsaf  dsafdas  dsafasdf' len={20} />
 <Landing />

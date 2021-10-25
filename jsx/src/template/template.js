@@ -1,23 +1,40 @@
-import React from "react";
+// import React from "react";
 
-export default class Comp extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {};
-    }
+// export default class Comp extends React.Component {
+//     constructor(props) {
+//         super(props);
+//         this.state = {};
+//     }
 
-    render() {
-        return (
-            <div>
+//     render() {
+//         return (
+//             <div>
 
-            </div>
-        );
-    }
+//             </div>
+//         );
+//     }
+// }
+
+
+// const ReadMore = () => {
+
+// }
+
+// export default ReadMore;
+
+
+
+
+
+
+import React from "react"
+
+export const Simple = () => {
+
+
+    return (
+        <div>
+
+        </div>
+    );
 }
-
-
-const ReadMore = () => {
-
-}
-
-export default ReadMore;
