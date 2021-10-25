@@ -7,6 +7,7 @@ export default class FormSubmit extends React.Component {
     }
 
     componentDidMount() {
+        console.log('didmount' + localStorage.getItem('first'));
         if (localStorage.getItem('first')) {
             this.setState({first: localStorage.getItem('first')});
         }
@@ -20,8 +21,8 @@ export default class FormSubmit extends React.Component {
 
     componentDidUpdate() {
         localStorage.setItem('first', this.state.first);
-        localStorage.setItem('first', this.state.last);
-        localStorage.setItem('first', this.state.select);
+        localStorage.setItem('last', this.state.last);
+        localStorage.setItem('select', this.state.select);
     }
 
     onContinueClicked = () => {
@@ -66,8 +67,8 @@ export default class FormSubmit extends React.Component {
         return (
             <div>
                 <form onSubmit={(e) => {this.onSubmit(e)}} className='form' style={{display: this.state.display === true ? 'block' : 'none'}}>
-                    <label>first: </label><input id='first' type="text" onChange={(e) => {this.onInputChange(e)}} value={this.props.first} id='first' required={true} /><br />
-                    <label>last: </label><input id='last' type="text" onChange={(e) => {this.onInputChange(e)}} value={this.props.last} id='last' /><br />
+                    <label>first: </label><input id='first' type="text" onChange={(e) => {this.onInputChange(e)}} value={this.state.first} id='first' required={true} /><br />
+                    <label>last: </label><input id='last' type="text" onChange={(e) => {this.onInputChange(e)}} value={this.state.last} id='last' /><br />
                     <select id='select' onChange={(e) => {this.onInputChange(e)}}>
                         <option value='0-15'>0-15</option>
                         <option value='15-45'>15-45</option>

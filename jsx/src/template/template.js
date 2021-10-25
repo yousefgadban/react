@@ -7,6 +7,17 @@ export default class Comp extends React.Component {
     }
 
     render() {
-        return <div></div>
+        return (
+            <div>
+
+            </div>
+        );
     }
 }
+
+
+const ReadMore = () => {
+
+}
+
+export default ReadMore;
